@@ -1,5 +1,5 @@
 # HAA
-Hero Adventure Addon. This is an example addon for the example project, [HeroAdventure]().
+Hero Adventure Addon. This is an example addon for the example project, [HeroAdventure](https://github.com/HackusatePvP/HeroAdventure).
 
 ## Addons
 Addons are effectively DLC's. It allows you to add additional content to a game without modifying the main release source.
