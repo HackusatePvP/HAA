@@ -12,11 +12,11 @@ You will need the RenJava framework as a dependency. If you need to modify exist
 You will also have to add any addons this addon may use as a dependency as well.
 ```xml
 <dependencies>
-    <!--This is the main RenJava framework. Note, you do not need this if your main game is a dependency.-->
+    <!--This is the main RenJava framework. Note, you do not need this if your main game is a dependency (unless you want to see source code documentation).-->
     <dependency>
         <groupId>me.piitex</groupId>
         <artifactId>RenJava</artifactId>
-        <version>0.1.26-SNAPSHOT</version>
+        <version>0.1.109-beta</version>
     </dependency>
     <!-- This is the main game for this example. Note if you have this you do not need the dependency above.-->
     <dependency>
@@ -58,9 +58,10 @@ public class MyAddon extends Addon {
 ```
 
 ### Build.info
-The build.info is a file which contains information for the addon. Currently it is only needed if your addon is dependent on other addons.
+The build.info is a file which contains information for the addon. It will be required to provide the compiled RenJava version your game uses. The version below is an example version please do not copy it.
 ```yaml
 dependencies: "SomeAddon,OtherAddon"
+ren.version: "0.1.109"
 ```
 This file is placed in the 'resources' directory. You will need to modify your pom file for the file to be included.
 ```xml

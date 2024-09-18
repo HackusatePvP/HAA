@@ -18,7 +18,7 @@ public class CheatListener implements EventListener {
         RenScene currentScene = HeroAdventure.getInstance().getPlayer().getCurrentScene();
         if (currentScene != null) {
             // When they push the 'h' key lets give the main character 10 gold.
-            if (event.getCode() == KeyCode.H) {
+            if (event.getEvent().getCode() == KeyCode.H) {
                 YouCharacter youCharacter = (YouCharacter) HeroAdventure.getInstance().getCharacter("mc");
                 youCharacter.setGold(youCharacter.getGold() + 10); // Easy peasy
 
