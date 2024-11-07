@@ -26,12 +26,27 @@
         </resources>
     </build>
 
-    <!-- Instead of using the RenJava framework, use your game instead. -->
+    <!-- Instead of using the RenJava framework, you use your game instead. -->
     <dependencies>
         <dependency>
             <groupId>me.piitex.game</groupId>
             <artifactId>HeroAdventure</artifactId>
             <version>1.0.1-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+
+                    <!-- ONLY EXCLUDE IF YOU ARE USING THE DEPENDENCY BELOW. IF NOT REMOVE THE ENTIRE <exclusions> -->
+                    <groupId>me.piitex</groupId>
+                    <artifactId>RenJava</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- You could also use the RenJava framework -->
+        <dependency>
+            <groupId>me.piitex</groupId>
+            <artifactId>RenJava</artifactId>
+            <version>0.1.147-beta</version>
         </dependency>
     </dependencies>
 

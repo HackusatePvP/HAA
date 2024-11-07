@@ -23,6 +23,12 @@ You will also have to add any addons this addon may use as a dependency as well.
         <groupId>me.piitex.game</groupId>
         <artifactId>HeroAdventure</artifactId>
         <version>1.0-SNAPSHOT</version>
+        
+        <!-- If you want to use main framework and the game as dependencies, you need to add exclusions. IF YOU ARE NOT PLEASE REMOVE THE FOLLOWING LINES!!! -->
+        <exclusion>
+            <groupId>me.piitex</groupId>
+            <artifactId>RenJava</artifactId>
+        </exclusion>
     </dependency>
 
     <!-- This is an addon which this example could need. (This doesn't actually exist) -->
