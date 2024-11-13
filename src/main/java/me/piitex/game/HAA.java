@@ -1,6 +1,7 @@
 package me.piitex.game;
 
 import me.piitex.game.listeners.CheatListener;
+import me.piitex.game.listeners.MenuModifierListener;
 import me.piitex.renjava.addons.Addon;
 
 /**
@@ -21,6 +22,7 @@ public class HAA extends Addon {
         // For this example I'm just going to make this addon give the player money.
         // First setup a key listener.
         registerListener(new CheatListener());
+        registerListener(new MenuModifierListener());
 
         // You can also do A LOT more with addons. You can create additional stories and characters. This is effectively a way to implement DLCS
     }
