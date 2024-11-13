@@ -1,4 +1,4 @@
 # Important!!! Must include compiled RenJava version
 # Please update this everytime you change RenJava versions for your base game.
-ren.version=0.1.147-beta
+ren.version=0.1.195-beta
 dependencies=
