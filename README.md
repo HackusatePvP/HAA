@@ -65,9 +65,9 @@ public class MyAddon extends Addon {
 
 ### Build.info
 The build.info is a file which contains information for the addon. It will be required to provide the compiled RenJava version your game uses. The version below is an example version please do not copy it.
-```yaml
-dependencies: "SomeAddon,OtherAddon"
-ren.version: "0.1.109"
+```properties
+dependencies="SomeAddon,OtherAddon"
+ren.version="0.1.109"
 ```
 This file is placed in the 'resources' directory. You will need to modify your pom file for the file to be included.
 ```xml
